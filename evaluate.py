@@ -18,9 +18,6 @@ with open(args.model, "rb") as f:
 y_pred = model.predict(X)
 accuracy = accuracy_score(y, y_pred)
 
-# changing accuracy to check quality gate failure
-accuracy = 0.80
-
 print(f"✅ Model evaluation complete. Accuracy: {accuracy:.2f}")
 
 filename = "metrics/accuracy.json"
